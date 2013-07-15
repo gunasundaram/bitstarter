@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
-    <title>My First Bit Starter</title>
+    <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup/code/bootstrap-combined.no-icons.min.css">
-    <link type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup/code/social-buttons.css">
-    <script src="https://d396qusza40orc.cloudfront.net/startup/code/jquery.js">
-    <script src="https://d396qusza40orc.cloudfront.net/startup/code/bootstrap.js">
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
+
     <style type="text/css">
-      /* Large desktop*/
-      @media (min-width: 980px) {
-	body {
-	 padding-top: 60px;
+
+      /* Large desktop */
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
         }
-	.linediv-l {
-	 border-right: 1px white solid;
-	}
-	.linediv-r {
-	 border-left: 1px white solid;
-	}
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
       }
 
       /* Landscape phones and down */
-      @media (min-width: 980px) {
-	.copy {
-	 padding: 2.5% 10%;
-	}
-	.linediv-l {
-	 border-bottom: 1px white solid;
-	}
-	.linediv-r {
-	 border-top: 1px white solid;
-	}
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
       }
 
       /* All form factors */
 
       /* Main body and headings */
-
-      body {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
-      {
-	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-	text-align: center;
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
       }
       p.lead {
-      	padding-top: 1.5%;
-	font-size: 24px;
-	line-height: 30px;
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
       }
       p {
-	font-size: 18px;
-	line-height: 24px;
+        font-size: 18px;
+        line-height: 24px;
       }
 
       /* Video pitch and Action */
-
       .pitch {
-	padding: 2.5% 0%;
+        padding: 2.5% 0%;
       }
       .order {
-	padding: 2% 0%;
+        padding: 2% 0%;
       }
       .actions {
-	background-color: #343434;
-	padding: 3% 0%;
+        background-color: #343434;
+        padding: 3% 0%;
       }
       .video, .thermometer, .order, .social, .statistics {
-	text-align: center;
+        text-align: center;
       }
       .statistics h3, .statistics p {
- 	color: white;
+        color: white;
       }
 
-      /* Martketing Copy and Footer */
-
+      /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
         padding-bottom: 2.5%;
-	text-align: justify;
+        text-align: justify;
       }
       .asset {
         padding: 2.5% 0%;
       }
       .footer {
-	color: #cccccc;
-	text-align: center;
+        color: #cccccc;
+        text-align: center;
       }
       .footer p {
         font-size: 11px;
@@ -99,8 +99,11 @@
       .footer a {
         color: #ccccff;
       }
+
     </style>
+
 </head>
+
 <body>
   <!-- Mobile-friendly navbar adapted from example. -->
   <!-- http://twitter.gitbub.io/bootstrap/examples/starter-template.html -->
@@ -138,6 +141,7 @@
 	  <p class="lead"> One sentence description. </p>
 	</div>
       </div>
+
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
@@ -173,67 +177,57 @@
 	  </div>
 	  <div class="span8 offset2 social">
 	    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-	    <button class="btn btn-facebook><i class="icon-facebook"></i> | Facebook</button>
+	    <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
 	  </div>
 	</div>
       </div>
              
-      <!-- Marketing Copy -->
-
       <div class="row-fluid section1">
 	<div class="span5 offset1 asset">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
 	<div class="span5 copy">
 	  <p>
-	    Lorem Ipsum is simply dummy text of the printing and typesetting 
-	    industry. Lorem Ipsum has been the industry's standard dummy text 
-	    ever since the 1500s, when an unknown printer took a galley of type 
-	    and scrambled it to make a type specimen book. It has survived not 
-	    only five centuries, but also the leap into electronic typesetting, 
-	    remaining essentially unchanged. It was popularised in the 1960s 
-	    with the release of Letraset sheets containing Lorem Ipsum passages,
-	    and more recently with desktop publishing software like Aldus 
-	    PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply 
-	    dummy text of the printing and typesetting industry. Lorem Ipsum 
-	    has been the industry's standard dummy text ever since the 1500s, 
-	    when an unknown printer took a galley of type and scrambled it to
-	    make a type specimen book. 
-	  </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+            rutrum, nunc leo tempus nisl, eu mollis justo velit at
+            nunc. Fusce nec egestas sem. Donec fringilla.	  </p>
 	</div>
       </div>
       <div class="row-fluid section2">
 	<div class="span5 offset1 copy copy-right">
 	  <p>
-	    Lorem Ipsum is simply dummy text of the printing and typesetting 
-	    industry. Lorem Ipsum has been the industry's standard dummy text 
-	    ever since the 1500s, when an unknown printer took a galley of type 
-	    and scrambled it to make a type specimen book. It has survived not 
-	    only five centuries, but also the leap into electronic typesetting, 
-	    remaining essentially unchanged. It was popularised in the 1960s 
-	    with the release of Letraset sheets containing Lorem Ipsum passages,
-	    and more recently with desktop publishing software like Aldus 
-	    PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply 
-	    dummy text of the printing and typesetting industry. Lorem Ipsum 
-	    has been the industry's standard dummy text ever since the 1500s, 
-	    when an unknown printer took a galley of type and scrambled it to
-	    make a type specimen book. 
-	  </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+            rutrum, nunc leo tempus nisl, eu mollis justo velit at
+            nunc. Fusce nec egestas sem. Donec fringilla.	  </p>
 	</div>
-	<div class="span5 offset1 asset">
+	<div class="span5 asset">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
       </div>
 
-      <!-- FAQ -- >
-
-      <div class-"row-fluid faq">
+      <div class="row-fluid faq">
 	<div class="span10 offset1">
 	  <h3>FAQ</h3>
 	  <div class="accordion" id="accordion2">
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
-	        <a class="accordion-toggle"> data-toggle="collapse"
+	        <a class="accordion-toggle" data-toggle="collapse"
 		   data-parent="#accordion2" href="#collapseOne">
 		  What does FAQ stand for?
 	        </a>
@@ -246,11 +240,12 @@
 	    </div>
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
-	        <a class="accordion-toggle"> data-toggle="collapse"
+	        <a class="accordion-toggle" data-toggle="collapse"
 		   data-parent="#accordion2" href="#collapseTwo">
 		  What's a Frequently Asked Question?
 	        </a>
-	      </div>TwoOne" class="accordion-body collapse">
+              </div>
+	      <div id="collapseTwo" class="accordion-body collapse">
 		<div class="accordion-inner">
 		  A question which is commonly asked by users.
 		</div>
@@ -259,8 +254,6 @@
 	  </div>
         </div>
       </div>
-
-      <!-- CC By-SA 3.0 license -->
 
       <div class="row-fluid footer">
         <div class="span12">
