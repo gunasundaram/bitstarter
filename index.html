@@ -3,7 +3,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>NearServ - Neighbourhood Customer Search Engine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -61,7 +61,21 @@
         font-size: 18px;
         line-height: 24px;
       }
-
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+	  
+	  
       /* Video pitch and Action */
       .pitch {
         padding: 2.5% 0%;
@@ -105,165 +119,162 @@
 </head>
 
 <body>
-  <!-- Mobile-friendly navbar adapted from example. -->
-  <!-- http://twitter.gitbub.io/bootstrap/examples/starter-template.html -->
 
     <div class="navbar navbar-inverse navbar-fixed-top">
-
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Bitstarter</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">NearServ Bitstarter</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
     </div>
 
+	<header class="jumbotron" id="header">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12 center">
+					<h1>NearServ</h1>
+					<p class="lead info">Helping service providers to find customers from their neighbourhood.</p>
+					<p class="centre">Support us</p>
+					<a class="btn btn-large btn-success" href="#">Signup</a>
+				</div>
+			</div>
+		</div>
+	</header>
+		
     <div class="container">
-      <div class="row-fluid heading">
-      	<div class="span12">
-	  <h1>Product</h1>
-        </div>
-      </div>
-      <div class="row-fluid subheading">
-	<div class="span12">
-	  <p class="lead"> One sentence description. </p>
-	</div>
-      </div>
-
-      <div class="row-fluid pitch">
-	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
-      	<div class="span5 actions">
-	  <div class="span8 offset2">
-	    <div class="statistics">
-              <div class="span4">	
-		<div class="linediv-l">
-		<h3>1000</h3> <p>backers</p>
-          	</div>
-	      </div>
-              <div class="span4">
-		<div class="linediv-c">
-		  <h3>$6000</h3> <p>of $10,000</p>
+	
+		<div class="row-fluid pitch">
+		
+			<div class="span5 offset1 video">
+				<img class="img-polaroid" src="StanfordLoc.png">
+			</div>
+			<div class="span5 actions">
+				<div class="span8 offset2">
+					<div class="statistics">
+						<div class="span4">	
+							<div class="linediv-l">
+								<h3>1000</h3> <p>backers</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-c">
+								<h3>$6000</h3> <p>of $10,000</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-r">
+								<h3>10</h3> <p>days left</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span10 offset1">
+					<div class="thermometer progress active">
+						<div class="bar bar-success" style="width: 60%;"></div>
+						<div class="bar bar-warning" style="width: 40%;"></div>
+					</div>
+				</div>
+				<div class="span6 offset3 order">
+					<button class="btn btn-success btn-large">Preorder</button>
+				</div>
+				<div class="span8 offset2 social">
+					<button class="btn btn-twitter"><i class="icon-twitter"></i> Twitter</button>
+					<button class="btn btn-facebook"><i class="icon-facebook"></i> Facebook</button>
+				</div>
+			</div>
 		</div>
-	      </div>
-              <div class="span4">
-		<div class="linediv-r">
-		  <h3>10</h3> <p>days left</p>
+		
+		<div class="row-fluid marketing">
+			<div class="offset1 span5 copy">
+				<h3>Features</h4>
+				<h4> <p class="icon-map-marker"> </p> Location Based Search <i class="icon-search"></i></h4>
+				<h4> <p class="icon-map-marker"> </p> Keyword Suggestions   <i class="icon-pencil"></i></h4>
+				<h4> <p class="icon-map-marker"> </p> Service Based         <i class="icon-briefcase"></i></h4>
+				<h4> <p class="icon-map-marker"> </p> Proximity Choice      <i class="icon-signal"></i></h4>
+			  	<h4> <p class="icon-map-marker"> </p> Social Media Choice   <i class="icon-twitter"></i> <i class="icon-facebook"> </i> <i class="icon-linkedin"></i></h4>
+				<h4> <p class="icon-map-marker"> </p> Templates				<i class="icon-book"></i></h4>
+				<h4> <p class="icon-map-marker"> </p> Email 				<i class="icon-envelope"></i></h4>
+			</div>
+			<div class="span5 copy">
+				<img class="img-polaroid" src="Features.jpg" width=480px height=300px>
+			</div>
 		</div>
-	      </div>
-	    </div>
-          </div>
-	  <div class="span10 offset1">
-	    <div class="thermometer progress active">
-	      <div class="bar bar-success" style="width: 60%;"></div>
-	      <div class="bar bar-warning" style="width: 40%;"></div>
-	    </div>
-	  </div>
-	  <div class="span6 offset3 order">
-	    <button class="btn btn-success btn-large">Preorder</button>
-	  </div>
-	  <div class="span8 offset2 social">
-	    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-	    <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-	  </div>
-	</div>
-      </div>
-             
-      <div class="row-fluid section1">
-	<div class="span5 offset1 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
-	<div class="span5 copy">
-	  <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.	  </p>
-	</div>
-      </div>
-      <div class="row-fluid section2">
-	<div class="span5 offset1 copy copy-right">
-	  <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.	  </p>
-	</div>
-	<div class="span5 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
-      </div>
-
-      <div class="row-fluid faq">
-	<div class="span10 offset1">
-	  <h3>FAQ</h3>
-	  <div class="accordion" id="accordion2">
-	    <div class="accordion-group">
-	      <div class="accordion-heading">
-	        <a class="accordion-toggle" data-toggle="collapse"
-		   data-parent="#accordion2" href="#collapseOne">
-		  What does FAQ stand for?
-	        </a>
-	      </div>
-	      <div id="collapseOne" class="accordion-body collapse">
-		<div class="accordion-inner">
-		  Frequently Asked Question.
+		
+		<div class="row-fluid section1">
+			<div class="span5 offset1 asset">
+				<img class="img-polaroid" src="tweeting.png" width=480px height=300px>
+			</div>
+			<div class="span5 copy">
+				<p>   
+					NearServ is an app for helping service providers like like lawyers,  
+					doctors, plumbers, mechanics, and the like to find customers nearby
+					through mining social media conversations and recommending potential 
+					customers who may be looking for services provided by the service 
+					providers. Service providers can choose the proximity limit for the 
+					search. Also NearServ can suggest keywords for search or the service
+					provider can enter keywords of their own choice, and will be available
+					for subsequent searches. Search results are displayed with proximity 
+					order and with potential match rating. NearServ will also have message
+					templates which can be used for communicating with the potential
+					customers either through social media or by email.  
+				</p>
+			</div>
 		</div>
-	      </div>
-	    </div>
-	    <div class="accordion-group">
-	      <div class="accordion-heading">
-	        <a class="accordion-toggle" data-toggle="collapse"
-		   data-parent="#accordion2" href="#collapseTwo">
-		  What's a Frequently Asked Question?
-	        </a>
-              </div>
-	      <div id="collapseTwo" class="accordion-body collapse">
-		<div class="accordion-inner">
-		  A question which is commonly asked by users.
+		
+		<div class="row-fluid faq">
+			<div class="span10 offset1">
+				<h3>FAQ</h3>
+				<div class="accordion" id="accordion2">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+								What is NearServ?
+							</a>
+						</div>
+						<div id="collapseOne" class="accordion-body collapse">
+							<div class="accordion-inner">
+								NearServ is an app for searching potential customers from neighbourhood through social media.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+								Who can use NearServ?
+							</a>
+						</div>
+						<div id="collapseTwo" class="accordion-body collapse">
+							<div class="accordion-inner">
+								Any service provider looking for customers from neighbourhood.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	      </div>
-	    </div>
-	  </div>
-        </div>
-      </div>
 
-      <div class="row-fluid footer">
-        <div class="span12">
-	  <p>This work is licensed under
-	     the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>,
-	     without all the cruft that would otherwise be put at the bottom of the page.
-	  </p>
-        </div>
-      </div>
-
-    </div
+		<div class="row-fluid footer">
+			<div class="span12">
+				<p>This work is licensed under
+				the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>,
+				without all the cruft that would otherwise be put at the bottom of the page.
+				</p>
+			</div>
+		</div>
+		
+    </div>
+	
 </body>
 </html>
